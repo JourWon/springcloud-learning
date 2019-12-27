@@ -10,7 +10,7 @@ spring:
         git:
           uri: https://gitee.com/JourWon/springcloud-config.git
           username: JourWon
-          password: joure128
+          password: 123456
           clone-on-start: true
   security:
     user:

@@ -11,7 +11,7 @@ spring:
           # 配置存储配置信息的Git仓库
           uri: https://gitee.com/JourWon/springcloud-config.git
           username: JourWon
-          password: joure128
+          password: 123456
           # 开启启动时直接从git获取配置
           clone-on-start: true
           # 获取子目录下的配置
