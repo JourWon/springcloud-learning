@@ -1,0 +1,72 @@
+server:
+  port: 8801
+
+spring:
+  application:
+    name: zuul-proxy
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8001/eureka/
+
+#zuul:
+#  routes:
+#    # 给服务配置路由
+#    user-service:
+#      path: /userService/**
+#    feign-service:
+#      path: /feignService/**
+
+# 默认路由规则
+zuul:
+  routes:
+    # 给服务配置路由
+    user-service:
+      path: /user-service/**
+    feign-service:
+      path: /feign-service/**
+  # 为网关路由配置前缀
+  prefix: /proxy
+  # 配置过滤敏感的请求头信息，设置为空就不会过滤
+  sensitive-headers: Cookie,Set-Cookie,Authorization
+  # 设置为true重定向是会添加host请求头
+  add-host-header: true
+  # 禁用过滤器
+  PreLogFilter:
+    pre:
+      disable: true
+
+  # 关闭默认路由配置
+#  ignored-services: user-service,feign-service
+
+# 查看路由信息
+management:
+  endpoints:
+    web:
+      exposure:
+        include: 'routes'
+
+hystrix:
+  # 用于控制HystrixCommand的行为
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            # 配置HystrixCommand执行的超时时间，执行超过该时间会进行服务降级处理
+            timeoutInMilliseconds: 1000
+
+ribbon:
+  # 服务请求连接超时时间（毫秒）
+  ConnectTimeout: 1000
+  # 服务请求处理超时时间（毫秒）
+  ReadTimeout: 3000
+
+
+
+
+
+

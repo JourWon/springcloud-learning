@@ -1,0 +1,16 @@
+server:
+  port: 9101
+
+spring:
+  application:
+    name: nacos-config-client
+  cloud:
+    nacos:
+      discovery:
+        # Nacos地址
+        server-addr: http://localhost:8848
+      config:
+        # Nacos地址
+        server-addr: http://localhost:8848
+        # 这里我们获取的yaml格式的配置
+        file-extension: yaml

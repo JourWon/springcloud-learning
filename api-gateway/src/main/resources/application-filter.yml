@@ -1,0 +1,55 @@
+server:
+  port: 9201
+service-url:
+  user-service: http://localhost:8201
+
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: add_request_parameter_route
+          uri: ${service-url.user-service}
+          filters:
+            - AddRequestParameter=username, jourwon
+          predicates:
+            - Path=/user/**
+
+#spring:
+#  cloud:
+#    gateway:
+#      routes:
+#        - id: hystrix_route
+#          uri: ${service-url.user-service}
+#          predicates:
+#            - Method=GET
+#          filters:
+#            - name: Hystrix
+#              args:
+#                name: fallbackcmd
+#                fallback-uri: forward:/fallback
+
+#spring:
+#  redis:
+#    host: localhost
+#    password: 123456
+#    port: 6379
+#  cloud:
+#    gateway:
+#      routes:
+#        - id: requestratelimiter_route
+#          uri: http://localhost:8201
+#          filters:
+#            - name: RequestRateLimiter
+#              args:
+#                # 每秒允许处理的请求数量
+#                redis-rate-limiter.replenishRate: 1
+#                # 每秒最大处理的请求数量
+#                redis-rate-limiter.burstCapacity: 2
+#                # 限流策略，对应策略的Bean
+#                key-resolver: "#{@ipKeyResolver}"
+#          predicates:
+#            - Method=GET
+#logging:
+#  level:
+#    org.springframework.cloud.gateway: debug
+

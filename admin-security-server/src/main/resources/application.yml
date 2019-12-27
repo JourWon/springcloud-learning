@@ -1,0 +1,21 @@
+server:
+  port: 9301
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8001/eureka/
+
+spring:
+  application:
+    name: admin-security-server
+  security:
+    user:
+      # 配置登录用户名和密码
+      name: root
+      password: 123456
+  boot:
+    admin:
+      discovery:
+        # 不显示admin-security-server的监控信息
+        ignored-services: ${spring.application.name}

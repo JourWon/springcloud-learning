@@ -1,0 +1,9 @@
+server:
+  port: 9401
+
+spring:
+  application:
+    name: oauth2-jwt-server
+  redis:
+    host: 10.172.0.201
+    database: 0

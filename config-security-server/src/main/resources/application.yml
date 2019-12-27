@@ -1,0 +1,26 @@
+server:
+  port: 8905
+
+spring:
+  application:
+    name: config-security-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://gitee.com/JourWon/springcloud-config.git
+          username: JourWon
+          password: joure128
+          clone-on-start: true
+  security:
+    user:
+      # 配置用户名和密码
+      name: root
+      password: 123456
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8001/eureka/

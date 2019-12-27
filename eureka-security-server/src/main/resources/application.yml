@@ -1,0 +1,18 @@
+server:
+  port: 8004
+
+spring:
+  application:
+    name: eureka-security-server
+  security:
+    user:
+      # 配置spring security登录用户名和密码
+      name: root
+      password: root
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    fetch-registry: false
+    register-with-eureka: false

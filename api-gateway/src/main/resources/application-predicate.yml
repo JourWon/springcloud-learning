@@ -1,0 +1,13 @@
+server:
+  port: 9201
+service-url:
+  user-service: http://localhost:8201
+
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: after_route
+          uri: ${service-url.user-service}
+          predicates:
+            - After=2019-12-22T19:30:00+08:00[Asia/Shanghai]

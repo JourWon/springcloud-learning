@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" native2AsciiForPropertiesFiles="true" defaultCharsetForPropertiesFiles="UTF-8" addBOMForNewFiles="with NO BOM">
+    <file url="file://$PROJECT_DIR$/admin-client" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/admin-security-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/admin-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/api-gateway" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/config-client" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/config-security-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/config-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/consul-config-client" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/consul-ribbon-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/consul-user-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/eureka-client" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/eureka-security-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/eureka-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/feign-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/hystrix-dashboard" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/hystrix-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/nacos-config-client" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/nacos-ribbon-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/nacos-user-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/oauth2-client" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/oauth2-jwt-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/oauth2-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ribbon-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/seata-account-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/seata-order-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/seata-storage-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sentinel-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/turbine-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/user-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zuul-proxy" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="admin-client" />
+        <module name="admin-security-server" />
+        <module name="admin-server" />
+        <module name="api-gateway" />
+        <module name="config-client" />
+        <module name="config-security-server" />
+        <module name="config-server" />
+        <module name="consul-config-client" />
+        <module name="consul-ribbon-service" />
+        <module name="consul-user-service" />
+        <module name="eureka-client" />
+        <module name="eureka-security-server" />
+        <module name="eureka-server" />
+        <module name="feign-service" />
+        <module name="hystrix-dashboard" />
+        <module name="hystrix-service" />
+        <module name="nacos-config-client" />
+        <module name="nacos-ribbon-service" />
+        <module name="nacos-user-service" />
+        <module name="oauth2-client" />
+        <module name="oauth2-jwt-server" />
+        <module name="oauth2-server" />
+        <module name="ribbon-service" />
+        <module name="seata-account-service" />
+        <module name="seata-order-service" />
+        <module name="seata-storage-service" />
+        <module name="sentinel-service" />
+        <module name="turbine-service" />
+        <module name="user-service" />
+        <module name="zuul-proxy" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="admin-client" options="-parameters" />
+      <module name="admin-security-server" options="-parameters" />
+      <module name="admin-server" options="-parameters" />
+      <module name="api-gateway" options="-parameters" />
+      <module name="config-client" options="-parameters" />
+      <module name="config-security-server" options="-parameters" />
+      <module name="config-server" options="-parameters" />
+      <module name="consul-config-client" options="-parameters" />
+      <module name="consul-ribbon-service" options="-parameters" />
+      <module name="consul-user-service" options="-parameters" />
+      <module name="eureka-client" options="-parameters" />
+      <module name="eureka-security-server" options="-parameters" />
+      <module name="eureka-server" options="-parameters" />
+      <module name="feign-service" options="-parameters" />
+      <module name="hystrix-dashboard" options="-parameters" />
+      <module name="hystrix-service" options="-parameters" />
+      <module name="nacos-config-client" options="-parameters" />
+      <module name="nacos-ribbon-service" options="-parameters" />
+      <module name="nacos-user-service" options="-parameters" />
+      <module name="oauth2-client" options="-parameters" />
+      <module name="oauth2-jwt-server" options="-parameters" />
+      <module name="oauth2-server" options="-parameters" />
+      <module name="ribbon-service" options="-parameters" />
+      <module name="seata-account-service" options="-parameters" />
+      <module name="seata-order-service" options="-parameters" />
+      <module name="seata-storage-service" options="-parameters" />
+      <module name="sentinel-service" options="-parameters" />
+      <module name="turbine-service" options="-parameters" />
+      <module name="user-service" options="-parameters" />
+      <module name="zuul-proxy" options="-parameters" />
+    </option>
+  </component>
+</project>
